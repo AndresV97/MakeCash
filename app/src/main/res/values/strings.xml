@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Makecash</string>
+    <string name="username">Usuario:</string>
+    <string name="password">Contraseña:</string>
+    <string name="password2">Repetir Contraseña</string>
+    <string name="login">INGRESAR</string>
+    <string name="forgot">¿Olvidaste tu contraseña?</string>
+    <string name="recordar">Recordarme</string>
+    <string name="registro">REGISTER</string>
+    <string name="correo">Correo</string>
+    <string name="signup">SIGN UP</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="or">ó</string>
+    <string name="login_with">Ingresar con:</string>
+
+</resources>
