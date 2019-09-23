@@ -46,6 +46,13 @@ class LoginActivity : AppCompatActivity() {
         }
 
         FirebaseAuth.getInstance().signOut()
+
+        btn_login.setOnClickListener {
+            var intent = Intent(this,FragmentosActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
     }
 
 /*
