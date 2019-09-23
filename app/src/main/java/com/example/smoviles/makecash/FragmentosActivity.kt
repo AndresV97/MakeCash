@@ -30,7 +30,7 @@ class FragmentosActivity : AppCompatActivity(),  NavigationView.OnNavigationItem
         navView.setNavigationItemSelectedListener(this)
 
         val manager = supportFragmentManager
-        val transaction=manager.beginTransaction()
+        val transaction= manager.beginTransaction()
         val inicioFragment = InicioFragment()
         transaction.add(R.id.contenedor,inicioFragment).commit()
     }
@@ -57,7 +57,6 @@ class FragmentosActivity : AppCompatActivity(),  NavigationView.OnNavigationItem
                 R.id.nav_inicio-> {
                     val inicioFragment = InicioFragment()
                     transaction.replace(R.id.contenedor,inicioFragment).commit()
-
                 }
                 R.id.nav_vender-> {
                     val venderFragment = VenderFragment()
@@ -66,6 +65,18 @@ class FragmentosActivity : AppCompatActivity(),  NavigationView.OnNavigationItem
                 R.id.nav_cuenta -> {
                     val cuentaFragment = CuentaFragment()
                     transaction.replace(R.id.contenedor,cuentaFragment).commit()
+                }
+                R.id.nav_favoritos -> {
+                    val favoritosFragment = FavoritosFragment()
+                    transaction.replace(R.id.contenedor,favoritosFragment).commit()
+                }
+                R.id.nav_notificaciones -> {
+                    val notificacionesFragment = NotificacionesFragment()
+                    transaction.replace(R.id.contenedor,notificacionesFragment).commit()
+                }
+                R.id.nav_opciones -> {
+                    val opcionesFragment = OpcionesFragment()
+                    transaction.replace(R.id.contenedor,opcionesFragment).commit()
                 }
             }
             val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
