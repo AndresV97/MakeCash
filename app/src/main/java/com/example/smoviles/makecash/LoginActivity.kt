@@ -55,6 +55,7 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
+
 /*
     public override fun onStart() {
         super.onStart()
@@ -77,14 +78,6 @@ class LoginActivity : AppCompatActivity() {
         if (requestCode == RC_SIGN_IN) {
             val task = GoogleSignIn.getSignedInAccountFromIntent(data)
             handleResult(task)
-            /*try {
-                // Google Sign In was successful, authenticate with Firebase
-                val account = task.getResult(ApiException::class.java)
-               // updateUI (account!!)
-            } catch (e: ApiException) {
-                // Google Sign In failed, update UI appropriately
-                Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show()
-            }*/
         }
     }
 
