@@ -7,7 +7,185 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:id="@+id/Iv_Foto"
+                    android:background="@color/whitesmoke"
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp">
+
+            </ImageButton>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:text="@string/take_picture"
+                    android:gravity="center"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp">
+
+            </TextView>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="@string/take_gallery"
+                        android:layout_marginStart="40dp">
+                </TextView>
+
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:id="@+id/btn_gallery"
+                        android:text="@string/examinar"
+                        android:textColor="@color/white"
+                        android:background="@drawable/btn_round"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="40dp">
+
+                </Button>
+
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_anuncio"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp">
+
+            </TextView>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_title_anuncio"
+                    android:hint="@string/add_title"
+                    android:inputType="text"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp">
+
+            </EditText>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/descripcion"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp">
+
+            </TextView>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_descripcion"
+                    android:hint="@string/add_descripcion"
+                    android:inputType="text"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp">
+
+            </EditText>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/precio"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="40dp">
+
+                </TextView>
+
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_precio"
+                        android:hint="@string/add_precio"
+                        android:inputType="number"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="40dp">
+
+                </EditText>
+
+            </LinearLayout>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="1dp"
+                    android:id="@+id/btn_guardar"
+                    android:text="@string/save"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="italic"
+                    android:background="@drawable/btn_border_round"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp">
+            </Button>
 
 
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_app"
+                    android:text="@string/app_name"
+                    android:gravity="center"
+                    android:textStyle="italic"
+                    android:textColor="@color/darkorange"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginTop="120dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

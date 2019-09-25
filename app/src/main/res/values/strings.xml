@@ -40,5 +40,22 @@
     <string name="title_activity_tab">TabActivity</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="mensajes">Mensajes</string>
+    <string name="anuncios">Mis Anuncios</string>
+    <string name="fav_msj">No tienes favoritos</string>
+    <string name="mens_msj">No tienes mensajes</string>
+    <string name="anun_msj">Aún no tienes anuncios</string>
+    <string name="not_msj">Aún no tienes notificaciones</string>
+    <string name="inicio_msj">No hay publicaciones para ver</string>
+    <string name="title_anuncio">Título de tu anuncio</string>
+    <string name="add_title">Agrega un título</string>
+    <string name="descripcion">Descripción</string>
+    <string name="add_descripcion">Agrega una descripción</string>
+    <string name="precio">Precio:</string>
+    <string name="add_precio">Agrega el precio</string>
+    <string name="save">GUARDAR</string>
+    <string name="take_picture">Tomar foto</string>
+    <string name="take_gallery">Buscar en galeria</string>
+    <string name="examinar">Examinar</string>
 
 </resources>

@@ -1,5 +1,7 @@
 package com.example.smoviles.makecash
 
+import android.app.FragmentManager
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import androidx.navigation.ui.AppBarConfiguration
@@ -10,9 +12,11 @@ import androidx.appcompat.widget.Toolbar
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class FragmentosActivity : AppCompatActivity(),  NavigationView.OnNavigationItemSelectedListener {
 
+    lateinit var mFragmentManager: FragmentManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +37,12 @@ class FragmentosActivity : AppCompatActivity(),  NavigationView.OnNavigationItem
         val transaction= manager.beginTransaction()
         val inicioFragment = InicioFragment()
         transaction.add(R.id.contenedor,inicioFragment).commit()
+
+        val fab: FloatingActionButton = findViewById(R.id.fab)
+        fab.setOnClickListener { view ->
+            var intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onBackPressed() {
