@@ -12,13 +12,23 @@ import android.view.ViewGroup
  */
 class VenderFragment : Fragment() {
 
+    private lateinit var root: View
+    val REQUEST_IMAGE_CAPTURE = 1
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_vender, container, false)
     }
 
-
 }
+
+
+
+
+
+
+
+
